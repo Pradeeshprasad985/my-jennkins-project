@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven-3.9'      // Maven name configured in Jenkins Global Tool Configuration
+        jdk 'jdk21'
+    }
 
     stages {
 
